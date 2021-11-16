@@ -4,9 +4,8 @@ const Details = (props)=> {
   
 
     const{id}=useParams()
-    console.log("id")
-   
-   
+  
+    
     
     return (
        <Detail id={id} detail={props.detail} getDetails={props.getDetails}></Detail>

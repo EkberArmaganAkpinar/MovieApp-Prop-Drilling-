@@ -20,7 +20,7 @@ export default class App extends Component {
 
   componentDidMount() {
 
-    const response = axios
+    axios
       .get("https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=b746250365dbd8d22de7757f176cbe5f")
       .then(
         res => {
@@ -35,7 +35,7 @@ export default class App extends Component {
 
   getDetails =  (id) => {
 
-    const response =  axios
+     axios
       .get(`https://api.themoviedb.org/3/movie/${id}?api_key=b746250365dbd8d22de7757f176cbe5f`)
       .then(
         res => {

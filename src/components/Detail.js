@@ -3,11 +3,9 @@ import React, { Component } from 'react'
 
 export default class Detail extends Component {
     componentDidMount() {
-        console.log("cdmdeki id")
-        console.log(this.props.id)
-
+      
         this.props.getDetails(this.props.id)
-        console.log(this.props.detail.genres)
+       
 
     }
 
@@ -21,18 +19,20 @@ export default class Detail extends Component {
                   
                         <div className="row">
                             <div className="col" >
-                                <img src={IMG_PATH+poster_path} height="100%" width="100%"></img>
+                                <img src={IMG_PATH+poster_path} alt='hello' height="100%" width="100%"></img>
                             </div>
                             <div className="col-6">
                                 <div className="text-center">
                                     <h4>{original_title}</h4>
-                                    <h5>Release Date: <h6 style={{color:"white"}} className="text-center">{release_date}</h6></h5>
-                                    <h5>Vote Average: <h6 style={{color:"white"}} className="text-center">{vote_average}</h6></h5>
+                                    <h5>Release Date: </h5>
+                                    <h6 style={{color:"white"}} className="text-center">{release_date}</h6>
+                                    <h5>Vote Average: </h5>
+                                    <h6 style={{color:"white"}} className="text-center">{vote_average}</h6>
                                     <h5>Overview:</h5>
                                     <h6 style={{color:"white"}} className="text-center">{overview}</h6>
                                 </div>
                             </div>
-                            <div className="col">  <img src={IMG_PATH+backdrop_path} height="100%" width="100%"></img></div>
+                            <div className="col">  <img src={IMG_PATH+backdrop_path} alt='hello' height="100%" width="100%"></img></div>
                         </div>
 
 

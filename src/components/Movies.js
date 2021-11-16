@@ -5,7 +5,7 @@ import Jumb from './Jumb';
 export default class Movies extends Component {
 
     render() {
-        console.log(this.props.movies)
+  
 
         return (
             <>

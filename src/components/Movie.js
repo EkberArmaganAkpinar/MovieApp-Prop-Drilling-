@@ -10,7 +10,7 @@ const Movie=(props)=> {
                 <Link to={`/details/${id}`}  className="card mt-2" style={{ textDecoration:"none", color:"black"}}>
 
 
-                    <img src={IMG_PATH+poster_path} className="img-fluid "></img>
+                    <img src={IMG_PATH+poster_path} alt='hello' className="img-fluid "></img>
 
                     <div className="card-body">
                         <h5 className="card-title">{original_title}</h5>
